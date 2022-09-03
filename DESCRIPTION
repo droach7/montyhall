@@ -1,0 +1,14 @@
+Package: montyhall
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Dana", "Roach", , "droach7@asu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The 'montyhall' package recreates the famous game from the TV show "Let's Make a Deal" where a contestant is presented with three doors. Behind two doors are goats, while behind the third door is a car. The aim is to pick the door hiding the car, however contestants are given two chances to pick a door-- at the beginning with their initial selection, and again after the host has opened a losing door. As such, contestants can pick one of two strategies; they can either stay with their intial seleciton, or switch to the only other remaining unopened door. This package contains functions for each of the steps in the game, which can then be combined and looped a specified number of times to generate a proportions table. This table helps contestants determine which strategy increases their chances of winning the car.
+Depends: 
+   dplyr
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
