@@ -20,6 +20,6 @@ Selects the final door choice. Contestants can either choose to stay
 with their original pick or switch to the other unopened door.
 }
 \examples{
-change_door(stay = TRUE, opened.door, first.pick)
-change_door(stay = FALSE, opened.door, first.pick)
+change_door(stay = TRUE, opened.door, a.pick)
+change_door(stay = FALSE, opened.door, a.pick)
 }
