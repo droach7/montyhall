@@ -22,11 +22,5 @@ that the simulated statistics will be closer to the actual theoretical values.
 The loop must include a collector vector, an iterator, and a binding step.
 }
 \examples{
-play_n_games
-results.df <- dplyr::bind_rows( results.list ) # binding step
-table( results.df ) \%>\%
-prop.table( margin=1 ) \%>\%  # row proportions
-round( 2 ) \%>\%
-print()
-return( results.df )
+play_n_games (n = 100)
 }
