@@ -27,5 +27,5 @@ door to open based on the initial selection and returns the number of the door
 to be opened.
 }
 \examples{
-open_goat_door( new.game, first.pick)
+open_goat_door( game, a.pick)
 }
