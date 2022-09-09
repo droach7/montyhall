@@ -10,8 +10,7 @@ play_n_games(n = 100)
 \item{Requires}{one specified argument, the number of desired iterations in the loop.}
 }
 \value{
-The function returns a list of wins and losses that can be bound into a proportions
-table with the row proportions for each strategy in the game.
+The function returns a table of proportions of wins and losses for each strategy in the game.
 }
 \description{
 'play_n_games' loops the play_game function through a specified number of iterations.
