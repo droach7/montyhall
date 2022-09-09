@@ -16,7 +16,7 @@ The function returns a length of 1 numeric vector indicating the final door sele
 'change_door' selects a final door selection.
 }
 \details{
-Selects the contestant's final door choice. Contestants can either choose to stay
+Selects the final door choice. Contestants can either choose to stay
 with their original pick or switch to the other unopened door.
 }
 \examples{
