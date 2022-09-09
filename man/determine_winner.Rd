@@ -25,6 +25,6 @@ has won, and WIN will be printed. However, if the final door selected hides a go
 the contestant has lost, and LOSE will be printed.
 }
 \examples{
-determine_winner(final.pick.stay, game)
-determine_winner(final.pick.switch, game)
+determine_winner(final.pick, game)
+determine_winner(final.pick, game)
 }
