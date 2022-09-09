@@ -68,7 +68,7 @@ select_door <- function( )
 #' @return
 #'	 The function returns a length of 1 numeric vector indicating the goat door opened.
 #' @examples
-#'	open_goat_door( new.game, first.pick)
+#'	open_goat_door( game, a.pick)
 #' @export
 open_goat_door <- function( game, a.pick )
 {
@@ -102,8 +102,8 @@ open_goat_door <- function( game, a.pick )
 #' @return
 #'	The function returns a length of 1 numeric vector indicating the final door selected.
 #' @examples
-#'	change_door(stay = TRUE, opened.door, first.pick)
-#'	change_door(stay = FALSE, opened.door, first.pick)
+#'	change_door(stay = TRUE, opened.door, a.pick)
+#'	change_door(stay = FALSE, opened.door, a.pick)
 #' @export
 change_door <- function( stay=T, opened.door, a.pick )
 {
@@ -140,8 +140,8 @@ change_door <- function( stay=T, opened.door, a.pick )
 #' @return
 #'	The function returns a length of 1 character vector specifying that the contestant has either won or lost.
 #' @examples
-#'	determine_winner(final.pick.stay, new.game)
-#'	determine_winner(final.pick.switch, new.game)
+#'	determine_winner(final.pick, game)
+#'	determine_winner(final.pick, game)
 
 #' @export
 determine_winner <- function( final.pick, game )
@@ -212,13 +212,7 @@ play_game <- function( )
 #'	The function returns a list of wins and losses that can be bound into a proportions
 #'	table with the row proportions for each strategy in the game.
 #' @examples
-#'	play_n_games
-#'	results.df <- dplyr::bind_rows( results.list ) # binding step
-#'	table( results.df ) %>%
-#'	prop.table( margin=1 ) %>%  # row proportions
-#'	round( 2 ) %>%
-#'	print()
-#'	return( results.df )
+#'	play_n_games ( n = 100 )
 #' @export
 play_n_games <- function( n=100 )
 {
